@@ -23,6 +23,28 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebFormsSite", "http://loca
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebFormsSite-NoAuth", "http://localhost:5294", "{0CAC34A4-64C6-4AD2-998C-D156287AA4C3}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_5294"
+		Debug.AspNetCompiler.PhysicalPath = "WebFormsSite-NoAuth\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_5294\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_5294"
+		Release.AspNetCompiler.PhysicalPath = "WebFormsSite-NoAuth\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_5294\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "WebFormsSite-NoAuth\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +52,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1E9EADD0-2E3D-4EF1-A464-F463BDD9572A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1E9EADD0-2E3D-4EF1-A464-F463BDD9572A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CAC34A4-64C6-4AD2-998C-D156287AA4C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CAC34A4-64C6-4AD2-998C-D156287AA4C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
