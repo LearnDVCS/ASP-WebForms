@@ -1,0 +1,18 @@
+﻿body {
+}
+#HeaderDiv img {
+    margin-right: 15px;
+}
+#Content td 
+{
+    vertical-align:top;
+}
+/*
+// The following is from: http://css-tricks.com/css-transparency-settings-for-all-broswers/
+.transparent_class {
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+*/

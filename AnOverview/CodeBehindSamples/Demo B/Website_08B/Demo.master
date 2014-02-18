@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Demo.master.cs" Inherits="Demo" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="StyleSheet.css" type="text/css" rel="Stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body 
+    style="background-color: #FFFFDD; width: 800px;">
+    <div style="background-color: #CCFFFF; width: 100%; padding:5px;">
+    <form id="form1" runat="server">
+    <div id="HeaderDiv">
+        <asp:Image ID="Image1" runat="server" ImageAlign="Left" 
+            ImageUrl="~/Images/MCj04395870000-verysmall.png" />
+        <h1>Demo Web Pages</h1>
+        <p style="clear:both;">Welcome</p>
+    </div>
+    <div id="Content" style="padding: 10px; float: right; width: 600px; background-color: #FFFFFF;">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <div style="width: 180px;">
+        <asp:Menu ID="Menu1" runat="server">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home (Default page)" 
+                    Value="Home (Default page)"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Code-Behind Samples/CodingWithTextboxes.aspx" 
+                    Text="Coding with TextBoxes" Value="Coding with TextBoxes"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Code-Behind Samples/CodingWithButtonsAndCheckBoxes.aspx" 
+                    Text="Coding with Buttons and CheckBoxes" 
+                    Value="Coding with Buttons and CheckBoxes"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Code-Behind Samples/CodingWithDropDownLists.aspx" 
+                    Text="Coding with DropDownLists" Value="Coding with DropDownLists">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Code-Behind Samples/CodingWithImages.aspx" 
+                    Text="Coding with Images" Value="Coding with Images"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        <br />
+    </div>
+    <div style="clear:both;">
+        <hr />
+        <p>Footnotes:</p>
+    </div>
+    </form>
+    </div>
+</body>
+
+</html>
