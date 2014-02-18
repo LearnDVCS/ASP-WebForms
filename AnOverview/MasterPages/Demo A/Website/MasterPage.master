@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+    body
+    {
+        background-color: #F3F0E8;
+        color: #0995D8;
+    }
+    
+    #PageDiv 
+    {
+        background-color: #FFFFFF;
+        width: 880px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-left: solid 4px #EBE5D7;
+        border-right: solid 4px #EBE5D7;
+    }
+    
+    #HeaderDiv 
+    {
+        background-color: #008BD3;
+        color: #FFFFFF;
+        font-weight: bold;
+        border-bottom: solid 2px #F4B365;
+        width: 100%;
+        position: relative;
+    }
+    
+    #PageHeaderDiv 
+    {
+        position: absolute; 
+        top: 10px; 
+        right: 10px; 
+        width: 560px;
+    }
+    
+    #PageHeaderDiv H1 
+    {
+        font-size: 2.5em;
+    }
+    
+    #BannerImageDiv img
+    {
+        width: 109px;
+        height: 109px;
+    }
+    
+    #MenuDiv 
+    {
+        float: left;
+        width: 220px;
+        background-color: #A7D285;
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+        
+    #ContentDiv 
+    {
+        padding: 5px;
+        margin-left: 222px;
+    }
+    
+    #FooterDiv 
+    {
+        clear: both;
+        width: 100%;
+        border-top: solid 4px #F4B365;
+        font-size: x-small;
+    }
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="PageDiv">
+            <div id="HeaderDiv">
+                <div id="PageHeaderDiv">
+                    <h1>MasterPage Tutorials</h1>
+                </div>
+                <div id="BannerImageDiv">
+                    <img src="Images/BrightEarth.png" alt="Logo" />
+                </div>
+            </div>
+            <div id="MenuDiv">
+                <h3>Menu</h3>
+                <asp:Menu ID="Menu1" runat="server">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" Value="Home">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/AboutUs.aspx" Text="About Us" Value="About Us">
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>
+            <div id="ContentDiv">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="FooterDiv">
+                <asp:ContentPlaceHolder ID="FooterContent" runat="server">
+                    &copy; 2011, Digital Media and IT, NAIT
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
